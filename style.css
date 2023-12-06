@@ -1,49 +1,74 @@
+body {
+    background-image: url(2-3.jpg);
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #2a2a2a;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.password-container {
+    position: relative;
+    margin-bottom: 20px;
+}
+
 #entradaSenha {
-    margin: 20px;
+    width: 100%;
     padding: 10px;
     font-size: 16px;
+    border: 2px solid #444;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+}
+
+#mostrarSenha {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 14px;
+    color: #4285f4;
 }
 
 #medidorPoder {
-    margin-top: 10px;
-    height: 20px;
-    width: 0;
-    background-color: gray;
-    transition: width 0.3s, background-color 0.3s;
-}
-
-#requisitos {
-    margin-top: 10px;
-    display: flex;
-    align-items: center;
+    height: 10px;
+    background-color: #444;
+    border-radius: 5px;
+    margin-bottom: 10px;
 }
 
 .requisito {
-    margin-right: 10px;
     font-size: 14px;
     font-weight: bold;
+    margin-bottom: 10px;
 }
 
 .vermelho {
     color: red;
-    transition: color 0.3s;
 }
 
 .verde {
     color: green;
-    transition: color 0.3s;
 }
 
 #textoPoder {
-    margin-top: 10px;
     font-size: 14px;
     font-weight: bold;
 }
-
-#mostrarSenha {
-    margin-top: 10px;
-    cursor: pointer;
-    font-size: 14px;
-    color: #4285F4;
-  }
-  
